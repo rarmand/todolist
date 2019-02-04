@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Column from "../../components/Column";
-
+import Header from "../../components/Header";
 // wyswietlanie tablicy z dwoma kolumnami
 // I kolumna: zadania do wykonania
 // II kolumna: zadania wykonane
@@ -10,10 +10,20 @@ import Column from "../../components/Column";
 export default class Dashboard extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Column />
-        <Column />
-      </React.Fragment>
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-10 col-xs-offset-1">
+            <Header />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-xs-10 col-xs-offset-1">
+            <h2>Jestem ambitna, więc przerabiam kurs uhaaa!</h2>
+            <Column />
+            <Column />
+          </div>
+        </div>
+      </div>
     );
   }
 }

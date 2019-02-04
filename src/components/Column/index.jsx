@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import Task from "../Task";
 
 // kolumna na zbieranie zadań
-// zadania napisane jako etykietkami
+// zadania zapisane jako etykietki
 
 const styles = {
   backgroundColor: "powderblue",
@@ -14,6 +15,10 @@ const styles = {
 
 export default class Column extends Component {
   render() {
-    return <div style={styles} />;
+    return (
+      <div style={styles}>
+        <Task title="Task no.2" />
+      </div>
+    );
   }
 }
