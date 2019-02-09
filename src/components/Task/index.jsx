@@ -17,7 +17,3 @@ export default class Task extends Component {
     );
   }
 }
-
-Task.propTypes = {
-  title: React.PropTypes.string,
-};
